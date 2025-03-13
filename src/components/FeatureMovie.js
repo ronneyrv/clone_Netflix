@@ -5,9 +5,13 @@ import "./FeatureMovie.css";
 export default ({ item }) => {
   let fistDate = new Date(item.first_air_date);
   let genres = [];
-
   for (let i in item.genres) {
     genres.push(item.genres[i].name);
+  }
+  
+  let desccripition = item.overview;
+  if(desccripition.length > 200) {
+    desccripition = desccripition.substring(0, 200) + '...';
   }
 
   return (
@@ -30,7 +34,7 @@ export default ({ item }) => {
               {item.number_of_seasons !== 1 ? "s" : ""}
             </div>
           </div>
-          <div className="featured-description">{item.overview}</div>
+          <div className="featured-description">{desccripition}</div>
           <div className="featured-buttons">
             <a href={`/watch/${item.id}`} className="featured-watchbuttons">
               ► Assistir
