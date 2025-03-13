@@ -29,7 +29,7 @@ export default {
             },
             {
                 slug: 'action',
-                title: 'Açao',
+                title: 'Ação',
                 items: await basicFetch(`/discover/movie?with_genres=28&language=pt-BR&api_key=${API_KEY}`)
             },
             {
@@ -44,7 +44,7 @@ export default {
             },
             {
                 slug: 'romance',
-                title: '',
+                title: 'Romance',
                 items: await basicFetch(`/discover/movie?with_genres=10749&language=pt-BR&api_key=${API_KEY}`)
             },
             {
