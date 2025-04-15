@@ -5,7 +5,7 @@ const profile = [
   },
   {
     "id": "2",
-    "image": "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"
+    "image": "https://i.pinimg.com/474x/c0/8e/6c/c08e6c9595e03202a46a95f66578799f.jpg"
   },
   {
     "id": "3",
@@ -18,6 +18,10 @@ const profile = [
   {
     "id": "5",
     "image": "https://loodibee.com/wp-content/uploads/Netflix-avatar-9.png"
+  },
+  {
+    "id": "6",
+    "image": "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"
   }
 ];
 
