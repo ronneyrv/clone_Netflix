@@ -2,11 +2,11 @@
 import React from "react";
 import "./Header.css";
 import { useParams, Link } from "react-router-dom";
-import users from "../../backand/usersDB";
 
 
 export default ({ black }) => {
   const { user } = useParams();
+  const users = JSON.parse(localStorage.getItem("users")) || [];
 
   const log = users.find((u) => u.user === user);
 

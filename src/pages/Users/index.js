@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./users.css";
 import tmdb from "../../tmdb";
-import FeatureMovieMean from "../../components/FeatureMovieMean";
+import FeatureMovieMean from "../../components/FeatureMovieMean/FeatureMovieMean";
 
 export default function Users() {
   const [movieList, setMovieList] = useState([]);
