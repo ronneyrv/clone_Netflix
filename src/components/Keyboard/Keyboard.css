@@ -1,0 +1,86 @@
+.keyboard-container {
+    background: rgba(50, 50, 50, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+}
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+}
+.key {
+    background: #666;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.key:active {
+    background: #444;
+}
+.key2 {
+    grid-column: span 5;
+    background: #666;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.key2:active {
+    background: #444;
+}
+.key3 {
+    grid-column: span 2;
+    background: #666;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.key3:active {
+    background: #444;
+}
+.key4 {
+    grid-column: span 1;
+    background: #666;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.key4:active {
+    background: #444;
+}
+
+@media (max-width:760px) {
+    .keyboard-container {
+        width: 90vw;
+        height: auto;
+    }
+    .keyboard {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+    }
+    .key4 {
+        grid-column: span 2;
+    }
+    .key2 {
+        grid-column: span 3;
+    }
+}
