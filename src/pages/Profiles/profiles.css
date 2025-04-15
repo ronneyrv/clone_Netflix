@@ -1,0 +1,66 @@
+.body-profile {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 20px;
+}
+
+.header-profile {
+  margin: 30px 20px;
+}
+.header-profile h2 {
+  margin: 0;
+}
+
+.actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 5px;
+  width: 600px;
+}
+.actions button {
+  width: 100%;
+  background: #666;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+.actions button:active {
+  background: #444;
+}
+
+.user-profile {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-profile-avatar img {
+  width: 250px;
+}
+
+.name-profile {
+  background-color: #111;
+  color: white;
+  font-size: 1em;
+  border: none;
+  padding-top: 10px;
+}
+
+@media (max-width: 760px) {
+  .body-profile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .user-profile {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .actions {
+    width: 90vw;
+  }
+}

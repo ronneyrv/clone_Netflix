@@ -1,0 +1,51 @@
+.userRow {
+    margin: 0;
+}
+
+.userRow-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Add-h2 {
+    margin-left: 10px;
+    opacity: 0;
+    transition: all ease 0.2s;
+}
+
+.userRow-listarea {
+    background-size: cover;
+    display: inline-block;
+    width: 120px;
+    overflow: hidden;
+}
+
+.userRow-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+
+.userRow-button {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 760px) {
+    .userRow-button {
+      opacity: 1 !important;
+    }
+    .Add-h2 {
+        width: 180px;
+        transform: scale(1) !important;
+    }
+    .userRow-item img {
+      transform: scale(1) !important;
+    }
+}

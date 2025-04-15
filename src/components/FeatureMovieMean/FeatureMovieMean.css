@@ -1,0 +1,113 @@
+.featuredMean {
+  height: 100vh;
+}
+
+.featuredMean-vertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featuredMean-horizontal {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #111 30%, transparent 70%);
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 30px;
+}
+
+.user-area {
+  flex: 1;
+}
+
+.log-netflix {
+  width: 125px;
+  margin-left: 48px;
+}
+
+.featuredMean-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  height: 100%;
+}
+
+.featuredMean-name,
+.featuredMean-info {
+  width: 100%;
+  text-align: right;
+}
+
+.featuredMean-name {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.featuredMean-info {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.userAdd-listarea {
+  margin-left: 50px;
+  background-size: cover;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.userAdd-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.userAdd-icon:hover {
+  transform: scale(1);
+}
+
+h2 {
+  margin-left: 10px;
+  opacity: 1;
+  transition: all ease 0.2s;
+}
+
+h4 {
+  margin: 5px 48px;
+}
+
+@media (max-width: 760px) {
+  .featuredMean-horizontal {
+    flex-direction: column;
+  }
+  .featuredMean {
+    height: 80vh;
+  }
+
+  .featuredMean-name {
+    font-size: 20px;
+  }
+
+  .featuredMean-info {
+    font-size: 12px;
+  }
+
+  .userAdd-listarea {
+    width: 150px;
+  }
+
+  .log-netflix {
+    width: 125px;
+    margin-left: px;
+  }
+}
+

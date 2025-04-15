@@ -1,0 +1,76 @@
+.avatar-container {
+  background: rgba(50, 50, 50, 0.9);
+  width: 600px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.avatars {
+  width: 120px;
+  cursor: pointer;
+  scale: 0.9;
+  transition: all ease 0.2s;
+}
+
+.avatars:hover {
+  scale: 1;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 20px;
+}
+
+.settings button {
+  width: 150px;
+  background: none;
+  border: none;
+  padding: 3px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  transition: all ease 0.5s;
+  gap: 10px;
+}
+
+.settings button:hover {
+  background: white;
+  color: black;
+}
+
+@media (max-width: 760px) {
+  .avatar-container {
+    display: grid;
+    width: 90vw;
+    gap: 10px;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .avatars {
+    width: 100px;
+    cursor: pointer;
+    scale: 0.9;
+    transition: all ease 0.2s;
+  }
+  .avatars:hover {
+    scale: 1;
+  }
+  .user-profile {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .actions {
+    width: 90vw;
+  }
+}
