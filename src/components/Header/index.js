@@ -2,7 +2,7 @@
 import React from "react";
 import "./Header.css";
 import { useParams, Link } from "react-router-dom";
-import netflixLogo from '../../assets/netflix-logo.jpg';
+import netflixLogo from '../../assets/netflixlogo.jpg';
 
 export default ({ black }) => {
   const { user } = useParams();
@@ -15,7 +15,7 @@ export default ({ black }) => {
       <div className="header-logo">
         <Link to="/">
           <img
-            src={netflix-logo.jpg}
+            src={netflixLogo}
             alt="Netflix"
           />
         </Link>
